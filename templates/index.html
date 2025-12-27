@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Text Summarization Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div class="container">
+    <h1>AI Text Summarization Tool</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <label>Enter your text:</label>
+        <textarea name="user_text" id="user_text" placeholder="Type or paste your text here...">{{ user_text }}</textarea>
+
+        <label>Or upload a TXT / PDF file:</label>
+        <input type="file" name="file_upload" id="file_upload" accept=".txt,.pdf">
+
+        <div class="button-group">
+            <button type="submit" class="btn-small">Generate Summary</button>
+            <button type="button" onclick="clearForm()" class="btn-small btn-clear">Clear</button>
+        </div>
+    </form>
+
+    {% if summary %}
+    <div class="summary-box" id="summary_box">
+        <h3>Generated Summary</h3>
+        <p>{{ summary }}</p>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+function clearForm() {
+    document.getElementById('user_text').value = "";
+    document.getElementById('file_upload').value = "";
+    
+    var summaryBox = document.getElementById('summary_box');
+    if(summaryBox) {
+        summaryBox.style.display = 'none';
+    }
+}
+</script>
+</body>
+</html>
