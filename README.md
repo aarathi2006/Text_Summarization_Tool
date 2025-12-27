@@ -42,3 +42,5 @@ Machine Learning concepts
 4.Selection of important sentences
 
 5.Generation of a concise and readable summary
+
+<img width="995" height="570" alt="Image" src="https://github.com/user-attachments/assets/f0d31758-f7ce-4878-b5ff-f9ba35fdcb41" />
