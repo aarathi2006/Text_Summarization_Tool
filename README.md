@@ -1,4 +1,15 @@
 # 📝 Text Summarization Tool
+COMPANY : CODTECH IT SOLUTIONS
+
+NAME : BODDU AARATHI
+
+INTERN ID : CT08DR2286
+
+DOMAIN : ARTIFICIAL INTELLIGENCE
+
+DURATION : 8 WEEKS
+
+MENTOR : NEELA SANTHOSH
 
 The Text Summarization Tool is an AI-powered application that automatically generates concise and meaningful summaries from large pieces of text. It helps users quickly understand the core ideas of documents, articles, or paragraphs without reading the entire content.
 
